@@ -1,7 +1,33 @@
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+}
 .name {
   font-family: "Oswald", sans-serif !important;
 }
-/* .aboutUs-img {
-  width: 50%;
+.welcome-abut {
+  font-family: "Sofia", sans-serif;
 }
-  */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+/* About is hover effect */
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(0.20, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.0);
+  transform: scale(0.8);
+}
